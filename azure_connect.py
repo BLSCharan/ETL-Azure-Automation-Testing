@@ -6,10 +6,10 @@
 # # AZURE SQL DATABASE CONFIGURATION
 # # =========================================================
 #
-# AZURE_SERVER = "charan-etl-sql-2026.database.windows.net"
-# AZURE_DATABASE = "ETL_DB"
-# AZURE_USERNAME = "azureadmin"
-# AZURE_PASSWORD = "06082004@As"
+# AZURE_SERVER = "********"
+# AZURE_DATABASE = "********"
+# AZURE_USERNAME = "********"
+# AZURE_PASSWORD = "********"
 #
 #
 # # =========================================================
@@ -53,10 +53,10 @@ try:
 
     connection = pyodbc.connect(
         "DRIVER={ODBC Driver 18 for SQL Server};"
-        "SERVER=charan-etl-sql-2026.database.windows.net;"
-        "DATABASE=ETL_DB;"
-        "UID=azureadmin;"
-        "PWD=06082004@As;"
+        "SERVER=********;"
+        "DATABASE=********;"
+        "UID=********;"
+        "PWD=********;"
         "Encrypt=yes;"
         "TrustServerCertificate=no;"
         "Connection Timeout=30;"
