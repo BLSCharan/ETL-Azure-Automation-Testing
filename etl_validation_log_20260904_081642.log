@@ -1,0 +1,43 @@
+2026-09-04 08:16:42,332 - INFO - ETL Validation Process Started
+2026-09-04 08:16:42,566 - INFO - Connected to SQL Server Successfully
+2026-09-04 08:16:44,066 - INFO - Data loaded into Pandas DataFrames successfully
+2026-09-04 08:16:44,066 - INFO - Source Count: 10
+2026-09-04 08:16:44,067 - INFO - Target Count: 5
+2026-09-04 08:16:44,067 - ERROR - Row Count Validation Failed
+2026-09-04 08:16:44,067 - INFO - Column Validation Passed
+2026-09-04 08:16:44,071 - INFO - Source Null Counts:
+id      0
+name    1
+city    2
+age     2
+dtype: int64
+2026-09-04 08:16:44,072 - INFO - Target Null Counts:
+id      0
+name    0
+city    0
+age     0
+dtype: int64
+2026-09-04 08:16:44,087 - INFO - Source Duplicate Rows: 0
+2026-09-04 08:16:44,089 - INFO - Target Duplicate Rows: 0
+2026-09-04 08:16:44,090 - INFO - Source Data Types:
+id        int64
+name     object
+city     object
+age     float64
+dtype: object
+2026-09-04 08:16:44,092 - INFO - Target Data Types:
+id       int64
+name    object
+city    object
+age      int64
+dtype: object
+2026-09-04 08:16:44,134 - ERROR - Records missing in Target:
+   id name_source city_source  age_source name_target city_target  age_target     _merge
+4   5       Meena       Delhi        27.0         NaN         NaN         NaN  left_only
+5   6         NaN        None         NaN         NaN         NaN         NaN  left_only
+6   7        None        None         NaN         NaN         NaN         NaN  left_only
+8   9         Sam   Hyderabad        25.0         NaN         NaN         NaN  left_only
+9  10      cherry      mumbai        22.0         NaN         NaN         NaN  left_only
+2026-09-04 08:16:44,192 - INFO - No Data Mismatches Found
+2026-09-04 08:16:44,335 - INFO - Connections Closed Successfully
+2026-09-04 08:16:44,335 - INFO - ETL Validation Process Completed
