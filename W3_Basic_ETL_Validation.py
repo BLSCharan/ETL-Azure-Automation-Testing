@@ -37,10 +37,10 @@ except Exception as e:
 try:
     az_connection = pyodbc.connect(
         "DRIVER={ODBC Driver 18 for SQL Server};"
-        "SERVER=charan-etl-sql-2026.database.windows.net;"
-        "DATABASE=ETL_DB;"
-        "UID=azureadmin;"
-        "PWD=06082004@As;"
+        "SERVER=********;"
+        "DATABASE=********;"
+        "UID=********;"
+        "PWD=******** ;"
         "Encrypt=yes;"
         "TrustServerCertificate=no;"
         "Connection Timeout=30;"
